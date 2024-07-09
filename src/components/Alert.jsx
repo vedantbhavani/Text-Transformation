@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 function Alert(props) {
   const capital = (word) => {
     const lower = word.toLowerCase();
