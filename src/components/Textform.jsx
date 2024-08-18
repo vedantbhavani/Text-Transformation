@@ -46,7 +46,7 @@ export default function Textform(props) {
 
                     <button onClick={handledownclick} className="btn btn-primary mx-4">Convert to Lowercase</button>
 
-                    <button onClick={handleCaptitalize} className="btn btn-primary mx-4">Convert to Lowercase</button>
+                    <button onClick={handleCaptitalize} className="btn btn-primary mx-4">Convert to Capitalize</button>
 
                     <button onClick={handlespaces} className="btn btn-primary  mx-4 ">Remove Extra-Spaces</button>
 
