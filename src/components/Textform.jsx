@@ -15,6 +15,11 @@ export default function Textform(props) {
         setText(newText)
         props.showalert("Converted to LowerCase", "success")
     }
+    const handleCaptitalize = () => {
+        let newText = string.split(" ").map(ele => ele.charAt(0).toUpperCase() + ele.slice(1)).join(" ");
+        setText(newText)
+        props.showalert("Converted to Capitalize", "success")
+    }
     const handleclear = () => {
         setText("");
         props.showalert("Clear Text", "success");
@@ -40,6 +45,8 @@ export default function Textform(props) {
                     <button onClick={handleupclick} className="btn btn-primary mx-4 my-4">Convert to Uppercase</button>
 
                     <button onClick={handledownclick} className="btn btn-primary mx-4">Convert to Lowercase</button>
+
+                    <button onClick={handleCaptitalize} className="btn btn-primary mx-4">Convert to Lowercase</button>
 
                     <button onClick={handlespaces} className="btn btn-primary  mx-4 ">Remove Extra-Spaces</button>
 
