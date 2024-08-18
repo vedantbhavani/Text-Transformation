@@ -16,7 +16,7 @@ export default function Textform(props) {
         props.showalert("Converted to LowerCase", "success")
     }
     const handleCaptitalize = () => {
-        let newText = string.split(" ").map(ele => ele.charAt(0).toUpperCase() + ele.slice(1)).join(" ");
+        let newText = text.split(" ").map(ele => ele.charAt(0).toUpperCase() + ele.slice(1)).join(" ");
         setText(newText)
         props.showalert("Converted to Capitalize", "success")
     }
